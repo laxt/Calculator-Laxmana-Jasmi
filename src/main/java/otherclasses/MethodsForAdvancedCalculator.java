@@ -75,7 +75,7 @@ public class MethodsForAdvancedCalculator implements CalculatorAdvancedOperation
 	}
 
 	/**
-	 * Using the math function for pi
+	 * Using the math function for PI
 	  * Function is inbuilt in java
 
 	 */
