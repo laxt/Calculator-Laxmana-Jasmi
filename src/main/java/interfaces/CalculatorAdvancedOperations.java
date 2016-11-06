@@ -1,3 +1,9 @@
+/**
+ *  General Advance Calculator
+ *  @author Laxmana-Jasmi
+ */
+
+
 package interfaces;
 
 public interface CalculatorAdvancedOperations {
