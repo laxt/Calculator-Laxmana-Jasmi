@@ -69,9 +69,12 @@ public class SimpleFunctionsTest {
 			assertEquals("The result should be: "+ result, calBasic.divide(firstNumber, secondNumber),result,0.0001);
 		}
 		secondNumber = 0.0;
+		
 		LOG.info("Testing the divide method with values " + firstNumber + " and 0.0");
 		assertTrue(calBasic.divide(firstNumber, secondNumber) == -1111.1111);
+		
 	}
+	
 }
 
 
