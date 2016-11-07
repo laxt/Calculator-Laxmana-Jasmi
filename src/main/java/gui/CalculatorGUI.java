@@ -335,17 +335,20 @@ public class CalculatorGUI implements ActionListener {
 			equalButtonMethod();
 		}
 
+		
 		if (e.getSource() == btnPi) {
 			try {
+				textDisplay.setText("3.141616877");
 				String firstField = textDisplay.getText();
-				double txt2dbl1 = Double.parseDouble(firstField);
-				double res = mca.pi(txt2dbl1);
+			// double txt2dbl1 = Double.parseDouble(firstField);
+				double res = mca.pi();
 				textDisplay.setText("" + res);
 			} catch (Exception a) {
 				a.getMessage();
 			}
 		}
 
+		
 		if (e.getSource() == btnSquareRoot) {
 			try {
 				String firstField = textDisplay.getText();

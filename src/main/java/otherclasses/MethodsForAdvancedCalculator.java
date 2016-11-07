@@ -80,7 +80,7 @@ public class MethodsForAdvancedCalculator implements CalculatorAdvancedOperation
 
 	 */
 
-	public double pi(double a) {
+	public double pi() {
 		
 		return Math.PI;
 	}
