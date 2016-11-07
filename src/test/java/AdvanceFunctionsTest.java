@@ -25,10 +25,6 @@ public class AdvanceFunctionsTest {
 				LOG.info("Testing the power method with the values " + firstNumber+" and "+ secondNumber +" = " + result);
 				assertEquals("The result should be: "+ result, calAdvance.pow(firstNumber, secondNumber),result,0.001);
 			}
-			secondNumber = 0.5;
-			firstNumber = -2;
-			LOG.info("Testing negative number to power of 0.5 " + firstNumber+" and "+ secondNumber );
-			assertTrue(calAdvance.pow(firstNumber, secondNumber)== -1111.1111);
       }
       @Test 
       public void testPow2() {
@@ -196,12 +192,16 @@ public class AdvanceFunctionsTest {
 			
       }
       @Test 
-      public void testPi() {
-    	 
+      public void testExp() {
+    	 double Number =0.0;
+			for (int i = 0; i < 50; i++) {	
+				Number = random.nextDouble()*200;
 				
-				double result = Math.PI;
-				LOG.info("Testing the pi method");
-				assertEquals("The result should be: "+ result, calAdvance.pi(0),result,0.001);
+				double result = Math.exp(Number);
+				LOG.info("Testing the exponential method with the value " + Number+" and "+ " = " + result);
+				assertEquals("The result should be: "+ result, calAdvance.exp(Number),result,0.001);
+			}
+
 			
       }
       @Test 

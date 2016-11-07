@@ -80,9 +80,9 @@ public class MethodsForAdvancedCalculator implements CalculatorAdvancedOperation
 
 	 */
 
-	public double pi(double a) {
+	public double exp(double a) {
 		
-		return Math.PI;
+		return Math.exp(a);
 	}
 
 	
