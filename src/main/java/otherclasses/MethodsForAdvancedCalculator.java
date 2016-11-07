@@ -75,14 +75,14 @@ public class MethodsForAdvancedCalculator implements CalculatorAdvancedOperation
 	}
 
 	/**
-	 * Using the math function for PI
+	 * Using the math function for Exp
 	  * Function is inbuilt in java
 
 	 */
 
-	public double pi() {
+	public double exp(double a) {
 		
-		return Math.PI;
+		return Math.exp(a);
 	}
 
 	

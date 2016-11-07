@@ -15,6 +15,8 @@ import javax.swing.JTextField;
 import otherclasses.MethodsForAdvancedCalculator;
 import otherclasses.MethodsForSimpleCalculations;
 import java.awt.Font;
+import javax.swing.SwingConstants;
+import java.awt.Color;
 
 /**
  * 
@@ -39,7 +41,7 @@ public class CalculatorGUI implements ActionListener {
 	private JButton btnplus;
 	private JButton btnMultiply;
 	private JButton btnDivide;
-	private JButton btnPi;
+	private JButton btnExp;
 	private JButton btnEqual;
 	private JButton btnSquareRoot;
 	private JButton btnSquare;
@@ -79,7 +81,7 @@ public class CalculatorGUI implements ActionListener {
 		frame = new JFrame("Calculator-Lax-Jasmi");
 		frame.setResizable(false);
 		frame.setFont(new Font("Dialog", Font.PLAIN, 10));
-		frame.setBounds(100, 100, 421, 254);
+		frame.setBounds(100, 100, 421, 280);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 
@@ -124,16 +126,17 @@ public class CalculatorGUI implements ActionListener {
 		btnplus.setBounds(129, 172, 51, 29);
 
 		btnMultiply = new JButton("*");
-		btnMultiply.setBounds(195, 48, 51, 29);
+		btnMultiply.setBounds(195, 48, 61, 29);
 
 		btnDivide = new JButton("/");
-		btnDivide.setBounds(195, 93, 51, 29);
+		btnDivide.setBounds(195, 93, 61, 29);
 
-		btnPi = new JButton("\u03C0 ");
-		btnPi.setBounds(195, 134, 51, 29);
+		btnExp = new JButton("e^x");
+		btnExp.setHorizontalAlignment(SwingConstants.LEFT);
+		btnExp.setBounds(195, 134, 61, 29);
 
 		btnEqual = new JButton("=");
-		btnEqual.setBounds(195, 172, 51, 29);
+		btnEqual.setBounds(195, 172, 61, 29);
 
 		btnSquareRoot = new JButton("\u221A");
 		btnSquareRoot.setBounds(261, 48, 64, 29);
@@ -187,7 +190,7 @@ public class CalculatorGUI implements ActionListener {
 		frame.getContentPane().add(btnMultiply);
 		frame.getContentPane().add(btnDivide);
 
-		frame.getContentPane().add(btnPi);
+		frame.getContentPane().add(btnExp);
 		frame.getContentPane().add(btnEqual);
 		frame.getContentPane().add(btnSquareRoot);
 		frame.getContentPane().add(btnSquare);
@@ -197,11 +200,20 @@ public class CalculatorGUI implements ActionListener {
 		frame.getContentPane().add(btnCos);
 		frame.getContentPane().add(btnTan);
 		frame.getContentPane().add(btnAC);
+		
+		JButton btnMessage = new JButton("The calculator is in Radians.");
+		btnMessage.setForeground(Color.ORANGE);
+		btnMessage.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnMessage.setBounds(0, 211, 415, 29);
+		frame.getContentPane().add(btnMessage);
 
 	}
 	
 	/**
-	 * Defining the actionlisteners
+	 * Defining the ActionListeners
 	 */
 
 	public void addActionListeners() {
@@ -219,7 +231,7 @@ public class CalculatorGUI implements ActionListener {
 		btnplus.addActionListener(this);
 		btnMultiply.addActionListener(this);
 		btnDivide.addActionListener(this);
-		btnPi.addActionListener(this);
+		btnExp.addActionListener(this);
 		btnEqual.addActionListener(this);
 		btnSquareRoot.addActionListener(this);
 		btnSquare.addActionListener(this);
@@ -336,12 +348,12 @@ public class CalculatorGUI implements ActionListener {
 		}
 
 		
-		if (e.getSource() == btnPi) {
+	
+		if (e.getSource() == btnExp) {
 			try {
-				textDisplay.setText("3.141616877");
 				String firstField = textDisplay.getText();
-			// double txt2dbl1 = Double.parseDouble(firstField);
-				double res = mca.pi();
+				double txt2dbl1 = Double.parseDouble(firstField);
+				double res = mca.exp(txt2dbl1);
 				textDisplay.setText("" + res);
 			} catch (Exception a) {
 				a.getMessage();

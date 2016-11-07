@@ -14,6 +14,8 @@ public interface CalculatorAdvancedOperations {
 	public double log(double a);
 	public double squareRoot(double a);
 	public double pow(double a,double b);
-	public double pi();
+
+	public double exp(double a);
+
 
 }
