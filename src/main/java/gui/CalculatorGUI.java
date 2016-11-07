@@ -347,6 +347,8 @@ public class CalculatorGUI implements ActionListener {
 			equalButtonMethod();
 		}
 
+		
+	
 		if (e.getSource() == btnExp) {
 			try {
 				String firstField = textDisplay.getText();
@@ -358,6 +360,7 @@ public class CalculatorGUI implements ActionListener {
 			}
 		}
 
+		
 		if (e.getSource() == btnSquareRoot) {
 			try {
 				String firstField = textDisplay.getText();

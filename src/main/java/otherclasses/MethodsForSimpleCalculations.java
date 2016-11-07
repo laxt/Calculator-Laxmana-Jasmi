@@ -33,17 +33,17 @@ public class MethodsForSimpleCalculations implements CalculatorBasicOperations{
 		return  a * b;
 	}
 	/**
-	 * Functions for division and division by zero is checked
+	 * Functions for division and division by zero is checked throwing message
 	 */
 
-	public double divide(double a, double b){
+	public double divide (double a, double b){
 		double result = a / b;
 		if (Double.isInfinite(result)){
-			JOptionPane.showMessageDialog(null, "division by zero!", "Error message", JOptionPane.ERROR_MESSAGE);			
-			return -1111.1111;
-		}		
-		
-		return result;
+			System.out.println("Something went wrong! "+"Maybe you tried to divide by 0?");
+			return -0.123456789;
+		} else {
+			return a / b;
+		}
 	}
 
 	
