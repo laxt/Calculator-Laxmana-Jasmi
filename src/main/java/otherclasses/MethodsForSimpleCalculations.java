@@ -5,10 +5,7 @@
 
 
 package otherclasses;
-
-import javax.swing.JOptionPane;
-
-import interfaces.*;
+import interfaces.CalculatorBasicOperations;
 
 public class MethodsForSimpleCalculations implements CalculatorBasicOperations{
 	/**
@@ -37,17 +34,17 @@ public class MethodsForSimpleCalculations implements CalculatorBasicOperations{
 	 */
 
 	public double divide (double a, double b){
-		double result = a / b;
-		if (Double.isInfinite(result)){
-			System.out.println("Something went wrong! "+"Maybe you tried to divide by 0?");
-			return -0.123456789;
-		} else {
-			return a / b;
-		}
+	      if (b == 0) {
+	          throw new IllegalArgumentException("Cannot divide by 0!");
+	       }
+	       return (double) a / b;
+
 	}
+}
+
 
 	
-}
+
 
 	
 

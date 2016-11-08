@@ -1,6 +1,5 @@
 import static org.junit.Assert.*;
 
-import java.text.DecimalFormat;
 import java.util.Random;
 import java.util.logging.Logger;
 
@@ -169,106 +168,46 @@ public class SimpleFunctionsTest {
 			assertEquals("The result should be: "+result,calBasic.multiply(firstNumber, secondNumber), result, 0.0001);
 		
 	}
-	 /** Testing divide by zero
-	 * 
-	 * */
-	@Test
-	public void testDivide3() {
-		double firstNumber = 0.0;
-		double secondNumber= 0.0;
-		double result =-0.123456;
-		result = firstNumber / secondNumber;
-		LOG.info("Testing the divide method with the values " + firstNumber+" and "+ secondNumber);
-		assertEquals(Math.round(calBasic.divide(firstNumber, secondNumber)),Math.round(result));
-			
-}
 	
 	 /** Testing for both positive numbers for simple division
 	 * 
 	 * */
 
-	@Test
-	public void testDivide1() {
-		double firstNumber = 0;
-		double secondNumber = 0;
-		double result = 0;
-		DecimalFormat df = new DecimalFormat("#,###");
+	   @Test
+	   public void testDivIntFail() {
+	      assertNotEquals("error in divInt()", 1, calBasic.divide(9, 3));
+	   }
+	 
+	   
+	   /**
+	    * Test for illegal exception
+	    */
+	   @Test(expected = IllegalArgumentException.class)
+	   public void testDivIntByZero() {
+		   calBasic.divide(9, 0); // expect an IllegalArgumentException
+	   }
+	 
+	 /**
+	  * Test for negative  
+	  */
+	   @Test
+	   public void testDivRealPass() {
+	      assertEquals("error in divInt()", 0.333333, calBasic.divide(1, 3), 1e-6);
+	      assertEquals("error in divInt()", 0.111111, calBasic.divide(1, 9), 1e-6);
+	   }
+	   
+	   
+		 /** Testing divide by zero
+		 * 
+		 * */
 
-		
-		for (int i = 0; i <= 50; i++){
-			firstNumber = Double.valueOf(df.format(random.nextDouble() *50 ));
-			secondNumber = Double.valueOf(df.format(random.nextDouble() *50));
-			result = firstNumber / secondNumber;
-			
-			LOG.info("Testing the method division with: " + firstNumber + " and " + secondNumber + " with the result: " + result);
-			assertEquals(Math.round(calBasic.divide(firstNumber, secondNumber)) , Math.round( result));
-		}
-	}
-	
-	/**
-	 * Testing to test basic method division with both numbers negative
-	 */
-	@Test
-	public void testDivide2() {
-		double firstNumber = 0;
-		double secondNumber = 0;
-		double result = 0;
-		DecimalFormat df = new DecimalFormat("#,###");
-
-		
-		for (int i = 0; i <= 50; i++){
-			firstNumber = Double.valueOf(df.format(random.nextDouble() *-50 -1));
-			secondNumber = Double.valueOf(df.format(random.nextDouble() *-50 -1 ));
-			result = firstNumber / secondNumber;
-			
-			LOG.info("Testing the method division with: " + firstNumber + " and " + secondNumber + " with the result: " + result);
-			assertEquals(Math.round(calBasic.divide(firstNumber, secondNumber)) , Math.round( result));
-		}
-	}
-	
-	/**
-	 * Testing to test basic method division with first number positive and second negative
-	 */
-	@Test
-	public void testDivide4() {
-		double firstNumber = 0;
-		double secondNumber = 0;
-		double result = 0;
-		DecimalFormat df = new DecimalFormat("#,###");
-
-		
-		for (int i = 0; i <= 50; i++){
-			firstNumber = Double.valueOf(df.format(random.nextDouble() *50 + 1 ));
-			secondNumber = Double.valueOf(df.format(random.nextDouble() *-50 -1));
-			result = firstNumber / secondNumber;
-			
-			LOG.info("Testing the method division with: " + firstNumber + " and " + secondNumber + " with the result: " + result);
-			assertEquals(Math.round(calBasic.divide(firstNumber, secondNumber)) , Math.round( result));
-		}
-	}
-	
-	/**
-	 * Testing to test basic method division with first number negative and second positive
-	 */
-	@Test
-	public void testDivide5() {
-		double firstNumber = 0;
-		double secondNumber = 0;
-		double result = -0;
-		DecimalFormat df = new DecimalFormat("#,###");
-
-		
-		for (int i = 0; i <= 50; i++){
-			firstNumber = Double.valueOf(df.format(random.nextDouble() *-50 -1));
-			secondNumber = Double.valueOf(df.format(random.nextDouble() *50 +1));
-			result = firstNumber / secondNumber;
-			
-			LOG.info("Testing the method division with: " + firstNumber + " and " + secondNumber + " with the result: " + result);
-			assertEquals(Math.round(calBasic.divide(firstNumber, secondNumber)) , Math.round( result));
-		}
+	   @Test(expected = IllegalArgumentException.class)
+	   public void testDivRealByZero() {
+		   calBasic.divide(9, 0); // expect an IllegalArgumentException
+	   }
 	}
 
 	
-}
+
 
 
