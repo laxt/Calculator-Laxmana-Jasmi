@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Calculator-Laxmana-Jasmi,otherclasses,MethodsForAdvancedCalculator,0,25,0,0,0,8,0,8,0,8
+Calculator-Laxmana-Jasmi,otherclasses,MethodsForSimpleCalculations,0,28,0,2,0,7,0,6,0,5
+Calculator-Laxmana-Jasmi,gui,CalculatorGUI.new ActionListener() {...},7,0,0,0,2,0,2,0,2,0
+Calculator-Laxmana-Jasmi,gui,CalculatorGUI,1286,0,48,0,232,0,30,0,6,0
+Calculator-Laxmana-Jasmi,Main,Main,12,0,0,0,4,0,2,0,2,0

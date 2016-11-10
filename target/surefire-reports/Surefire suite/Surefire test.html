@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>TestNG:  Surefire test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Surefire test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>34/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 10 14:47:03 CET 2016</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (889 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='SimpleFunctionsTest.testAdd1()'><b>testAdd1</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testAdd1(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testAdd2()'><b>testAdd2</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testAdd2(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testAdd3()'><b>testAdd3</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testAdd3(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testCos1()'><b>testCos1</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testCos1(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testCos2()'><b>testCos2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testCos2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testCos3()'><b>testCos3</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testCos3(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testDivIntByZero()'><b>testDivIntByZero</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testDivIntByZero(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testDivIntFail()'><b>testDivIntFail</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testDivIntFail(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testDivRealByZero()'><b>testDivRealByZero</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testDivRealByZero(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testDivRealPass()'><b>testDivRealPass</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testDivRealPass(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testExp()'><b>testExp</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testExp(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testExp1()'><b>testExp1</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testExp1(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testExp2()'><b>testExp2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testExp2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testLog1()'><b>testLog1</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testLog1(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testLog2()'><b>testLog2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testLog2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testLog3()'><b>testLog3</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testLog3(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testMultiply1()'><b>testMultiply1</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiply1(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testMultiply2()'><b>testMultiply2</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiply2(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testMultiply3()'><b>testMultiply3</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testMultiply3(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testPow()'><b>testPow</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testPow(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testPow2()'><b>testPow2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testPow2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testPow3()'><b>testPow3</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testPow3(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testSin1()'><b>testSin1</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSin1(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testSin2()'><b>testSin2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSin2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testSin3()'><b>testSin3</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSin3(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testSquareRoot1()'><b>testSquareRoot1</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRoot1(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testSquareRoot2()'><b>testSquareRoot2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRoot2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testSquareRoot3()'><b>testSquareRoot3</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSquareRoot3(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testSubtract1()'><b>testSubtract1</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtract1(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testSubtract2()'><b>testSubtract2</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtract2(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='SimpleFunctionsTest.testSubtract3()'><b>testSubtract3</b><br>Test class: SimpleFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testSubtract3(SimpleFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testTan1()'><b>testTan1</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testTan1(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testTan2()'><b>testTan2</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testTan2(AdvanceFunctionsTest)</td></tr>
+<tr>
+<td title='AdvanceFunctionsTest.testTan3()'><b>testTan3</b><br>Test class: AdvanceFunctionsTest</td>
+<td></td>
+<td>0</td>
+<td>testTan3(AdvanceFunctionsTest)</td></tr>
+</table><p>
+</body>
+</html>

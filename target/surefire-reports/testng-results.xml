@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="34" passed="34">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="889" started-at="2016-11-10T13:47:03Z" finished-at="2016-11-10T13:47:04Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="889" started-at="2016-11-10T13:47:03Z" finished-at="2016-11-10T13:47:04Z">
+      <class name="AdvanceFunctionsTest">
+        <test-method status="PASS" signature="testExp()[pri:0, instance:testExp(AdvanceFunctionsTest)]" name="testExp" duration-ms="57" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExp -->
+        <test-method status="PASS" signature="testPow()[pri:0, instance:testPow(AdvanceFunctionsTest)]" name="testPow" duration-ms="41" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPow -->
+        <test-method status="PASS" signature="testCos1()[pri:0, instance:testCos1(AdvanceFunctionsTest)]" name="testCos1" duration-ms="20" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCos1 -->
+        <test-method status="PASS" signature="testCos2()[pri:0, instance:testCos2(AdvanceFunctionsTest)]" name="testCos2" duration-ms="18" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCos2 -->
+        <test-method status="PASS" signature="testCos3()[pri:0, instance:testCos3(AdvanceFunctionsTest)]" name="testCos3" duration-ms="1" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCos3 -->
+        <test-method status="PASS" signature="testExp1()[pri:0, instance:testExp1(AdvanceFunctionsTest)]" name="testExp1" duration-ms="29" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExp1 -->
+        <test-method status="PASS" signature="testExp2()[pri:0, instance:testExp2(AdvanceFunctionsTest)]" name="testExp2" duration-ms="0" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExp2 -->
+        <test-method status="PASS" signature="testLog1()[pri:0, instance:testLog1(AdvanceFunctionsTest)]" name="testLog1" duration-ms="24" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLog1 -->
+        <test-method status="PASS" signature="testLog2()[pri:0, instance:testLog2(AdvanceFunctionsTest)]" name="testLog2" duration-ms="17" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLog2 -->
+        <test-method status="PASS" signature="testLog3()[pri:0, instance:testLog3(AdvanceFunctionsTest)]" name="testLog3" duration-ms="1" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLog3 -->
+        <test-method status="PASS" signature="testPow2()[pri:0, instance:testPow2(AdvanceFunctionsTest)]" name="testPow2" duration-ms="14" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPow2 -->
+        <test-method status="PASS" signature="testPow3()[pri:0, instance:testPow3(AdvanceFunctionsTest)]" name="testPow3" duration-ms="17" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPow3 -->
+        <test-method status="PASS" signature="testSin1()[pri:0, instance:testSin1(AdvanceFunctionsTest)]" name="testSin1" duration-ms="9" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSin1 -->
+        <test-method status="PASS" signature="testSin2()[pri:0, instance:testSin2(AdvanceFunctionsTest)]" name="testSin2" duration-ms="9" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSin2 -->
+        <test-method status="PASS" signature="testSin3()[pri:0, instance:testSin3(AdvanceFunctionsTest)]" name="testSin3" duration-ms="0" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSin3 -->
+        <test-method status="PASS" signature="testTan1()[pri:0, instance:testTan1(AdvanceFunctionsTest)]" name="testTan1" duration-ms="31" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTan1 -->
+        <test-method status="PASS" signature="testTan2()[pri:0, instance:testTan2(AdvanceFunctionsTest)]" name="testTan2" duration-ms="9" started-at="2016-11-10T14:47:04Z" finished-at="2016-11-10T14:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTan2 -->
+        <test-method status="PASS" signature="testTan3()[pri:0, instance:testTan3(AdvanceFunctionsTest)]" name="testTan3" duration-ms="1" started-at="2016-11-10T14:47:04Z" finished-at="2016-11-10T14:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTan3 -->
+        <test-method status="PASS" signature="testSquareRoot1()[pri:0, instance:testSquareRoot1(AdvanceFunctionsTest)]" name="testSquareRoot1" duration-ms="9" started-at="2016-11-10T14:47:04Z" finished-at="2016-11-10T14:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRoot1 -->
+        <test-method status="PASS" signature="testSquareRoot2()[pri:0, instance:testSquareRoot2(AdvanceFunctionsTest)]" name="testSquareRoot2" duration-ms="6" started-at="2016-11-10T14:47:04Z" finished-at="2016-11-10T14:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRoot2 -->
+        <test-method status="PASS" signature="testSquareRoot3()[pri:0, instance:testSquareRoot3(AdvanceFunctionsTest)]" name="testSquareRoot3" duration-ms="1" started-at="2016-11-10T14:47:04Z" finished-at="2016-11-10T14:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSquareRoot3 -->
+      </class> <!-- AdvanceFunctionsTest -->
+      <class name="SimpleFunctionsTest">
+        <test-method status="PASS" signature="testAdd1()[pri:0, instance:testAdd1(SimpleFunctionsTest)]" name="testAdd1" duration-ms="78" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdd1 -->
+        <test-method status="PASS" signature="testAdd2()[pri:0, instance:testAdd2(SimpleFunctionsTest)]" name="testAdd2" duration-ms="81" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdd2 -->
+        <test-method status="PASS" signature="testAdd3()[pri:0, instance:testAdd3(SimpleFunctionsTest)]" name="testAdd3" duration-ms="1" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAdd3 -->
+        <test-method status="PASS" signature="testDivIntFail()[pri:0, instance:testDivIntFail(SimpleFunctionsTest)]" name="testDivIntFail" duration-ms="0" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivIntFail -->
+        <test-method status="PASS" signature="testMultiply1()[pri:0, instance:testMultiply1(SimpleFunctionsTest)]" name="testMultiply1" duration-ms="55" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply1 -->
+        <test-method status="PASS" signature="testMultiply2()[pri:0, instance:testMultiply2(SimpleFunctionsTest)]" name="testMultiply2" duration-ms="33" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply2 -->
+        <test-method status="PASS" signature="testMultiply3()[pri:0, instance:testMultiply3(SimpleFunctionsTest)]" name="testMultiply3" duration-ms="1" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultiply3 -->
+        <test-method status="PASS" signature="testDivIntByZero()[pri:0, instance:testDivIntByZero(SimpleFunctionsTest)]" name="testDivIntByZero" duration-ms="0" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivIntByZero -->
+        <test-method status="PASS" signature="testSubtract1()[pri:0, instance:testSubtract1(SimpleFunctionsTest)]" name="testSubtract1" duration-ms="37" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtract1 -->
+        <test-method status="PASS" signature="testDivRealByZero()[pri:0, instance:testDivRealByZero(SimpleFunctionsTest)]" name="testDivRealByZero" duration-ms="0" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivRealByZero -->
+        <test-method status="PASS" signature="testSubtract2()[pri:0, instance:testSubtract2(SimpleFunctionsTest)]" name="testSubtract2" duration-ms="33" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtract2 -->
+        <test-method status="PASS" signature="testSubtract3()[pri:0, instance:testSubtract3(SimpleFunctionsTest)]" name="testSubtract3" duration-ms="0" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubtract3 -->
+        <test-method status="PASS" signature="testDivRealPass()[pri:0, instance:testDivRealPass(SimpleFunctionsTest)]" name="testDivRealPass" duration-ms="1" started-at="2016-11-10T14:47:03Z" finished-at="2016-11-10T14:47:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDivRealPass -->
+      </class> <!-- SimpleFunctionsTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

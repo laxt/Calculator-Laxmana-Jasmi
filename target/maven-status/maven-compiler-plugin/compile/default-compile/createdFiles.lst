@@ -1,0 +1,7 @@
+otherclasses\MethodsForSimpleCalculations.class
+interfaces\CalculatorAdvancedOperations.class
+otherclasses\MethodsForAdvancedCalculator.class
+interfaces\CalculatorBasicOperations.class
+Main\Main.class
+gui\CalculatorGUI.class
+gui\CalculatorGUI$1.class
